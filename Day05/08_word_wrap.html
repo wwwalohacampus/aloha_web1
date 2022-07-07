@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 여기에 작성해보세요:) */
+        .container {
+            width: 900px;
+            padding: 50px;
+            border: 1px solid gray;
+            margin: auto;
+        }
+
+        p.test {
+            width: 160px;
+            border: 1px solid black;
+
+            /* 긴 단어를 다음 줄로 넘김 */
+            word-wrap: break-word;
+        }
+
+        p.dotdot {
+            width: 120px;
+            border: 1px solid black;
+            white-space: nowrap;    /* 넘기지 않고 한줄에 */
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="test">
+            매우 긴 단어가 있는 경우에 자동으로 잘라준다.
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </p>
+
+        <p class="dotdot">
+            안녕하세요 문장이 너무 깁니다.
+        </p>
+    </div>
+
+</body>
+</html>
